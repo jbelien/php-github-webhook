@@ -1,10 +1,14 @@
+[![Latest Stable Version](https://poser.pugx.org/jbelien/github-webhook/v/stable)](https://packagist.org/packages/jbelien/github-webhook)
+[![Total Downloads](https://poser.pugx.org/jbelien/github-webhook/downloads)](https://packagist.org/packages/jbelien/github-webhook)
+[![Monthly Downloads](https://poser.pugx.org/jbelien/github-webhook/d/monthly.png)](https://packagist.org/packages/jbelien/github-webhook)
+
 # PHP GitHub Webhook
 
 GitHub Webhook using [Zend Expressive](https://docs.zendframework.com/zend-expressive/) (PHP)
 
 # Install
 
-    	composer create-project jbelien/php-github/webhook
+    composer create-project jbelien/github-webhook
 
 # Configuration
 
