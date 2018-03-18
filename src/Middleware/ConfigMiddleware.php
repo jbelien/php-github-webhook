@@ -4,14 +4,12 @@ declare(strict_types=1);
 
 namespace App\Middleware;
 
-use Psr\Http\Server\MiddlewareInterface;
-use Psr\Http\Server\RequestHandlerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Server\MiddlewareInterface;
+use Psr\Http\Server\RequestHandlerInterface;
 use Zend\ConfigAggregator\ConfigAggregator;
-use Zend\ConfigAggregator\PhpFileProvider;
 use Zend\ConfigAggregator\ZendConfigProvider;
-
 
 class ConfigMiddleware implements MiddlewareInterface
 {
@@ -24,8 +22,8 @@ class ConfigMiddleware implements MiddlewareInterface
         ];
 
         $config = new ConfigAggregator([
-            new ZendConfigProvider(realpath(dirname(dirname(__DIR__))) . '/composer.json'),
-            new ZendConfigProvider(realpath(dirname(dirname(__DIR__))) . '/config/application/*.{php,ini,xml,json,yaml}'),
+            new ZendConfigProvider(realpath(dirname(dirname(__DIR__))).'/composer.json'),
+            new ZendConfigProvider(realpath(dirname(dirname(__DIR__))).'/config/application/*.{php,ini,xml,json,yaml}'),
         ], $cacheConfig['config_cache_path']);
 
         return $handler->handle($request->withAttribute(self::CONFIG_ATTRIBUTE, $config->getMergedConfig()));

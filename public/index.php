@@ -15,7 +15,7 @@ use Zend\Expressive\MiddlewareFactory;
 use Zend\ServiceManager\Config;
 use Zend\ServiceManager\ServiceManager;
 
-/**
+/*
  * Self-called anonymous function that creates its own scope and keep the global namespace clean.
  */
 (function () {
