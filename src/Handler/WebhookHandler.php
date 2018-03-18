@@ -32,7 +32,7 @@ class WebhookHandler implements RequestHandlerInterface
         $this->signature = $headers['x-hub-signature'][0] ?? '';
 
         if (isset($this->config['token']) && !empty($this->config['token'])) {
-            $sha1 = hash_hmac('sha1', (string)$request->getBody(), $this->config['token']);
+            $sha1 = hash_hmac('sha1', (string) $request->getBody(), $this->config['token']);
 
             if (hash_equals('sha1='.$sha1, $this->signature) !== true) {
                 return new TextResponse('ERROR: Invalid signature!', 401);
@@ -54,15 +54,17 @@ class WebhookHandler implements RequestHandlerInterface
         }
     }
 
-    private function ping() {
+    private function ping()
+    {
         return new TextResponse('pong');
     }
 
-    private function push() {
+    private function push()
+    {
         $repository = $this->payload['repository']['full_name'];
         $branch = substr($this->payload['ref'], 11);
 
-        $out  = 'DELIVERY: '.$this->delivery.PHP_EOL;
+        $out = 'DELIVERY: '.$this->delivery.PHP_EOL;
         $out .= 'BY: '.$this->payload['pusher']['name'].PHP_EOL;
         $out .= '--------------------------------------------------'.PHP_EOL;
 
@@ -94,7 +96,6 @@ class WebhookHandler implements RequestHandlerInterface
 
                     $out .= '--------------------------------------------------'.PHP_EOL;
                 }
-
 
                 return new TextResponse($out, $status);
             }

@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace App;
 
 /**
- * The configuration provider for the App module
+ * The configuration provider for the App module.
  *
  * @see https://docs.zendframework.com/zend-component-installer/
  */
 class ConfigProvider
 {
     /**
-     * Returns the configuration array
+     * Returns the configuration array.
      */
     public function __invoke() : array
     {
@@ -22,7 +22,7 @@ class ConfigProvider
     }
 
     /**
-     * Returns the container dependencies
+     * Returns the container dependencies.
      */
     public function getDependencies() : array
     {
