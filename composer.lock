@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "8a1f664cfb418c4148abf2b7ed1788c5",
@@ -742,16 +742,16 @@
         },
         {
             "name": "zendframework/zend-expressive-fastroute",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-expressive-fastroute.git",
-                "reference": "a4cc8081bc745f971999c08ffa6c9c58bb193b06"
+                "reference": "e5b94197c9145810055133a09a277a29239e1a64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-expressive-fastroute/zipball/a4cc8081bc745f971999c08ffa6c9c58bb193b06",
-                "reference": "a4cc8081bc745f971999c08ffa6c9c58bb193b06",
+                "url": "https://api.github.com/repos/zendframework/zend-expressive-fastroute/zipball/e5b94197c9145810055133a09a277a29239e1a64",
+                "reference": "e5b94197c9145810055133a09a277a29239e1a64",
                 "shasum": ""
             },
             "require": {
@@ -805,7 +805,7 @@
                 "zend-expressive",
                 "zf"
             ],
-            "time": "2018-03-15T16:18:52+00:00"
+            "time": "2018-03-20T16:34:28+00:00"
         },
         {
             "name": "zendframework/zend-expressive-helpers",
@@ -869,16 +869,16 @@
         },
         {
             "name": "zendframework/zend-expressive-router",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-expressive-router.git",
-                "reference": "a1298921eb486d2a093205347a394e1ec74a9c43"
+                "reference": "072d6b0620f7e1e616cb60062425b4eedd1a0447"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-expressive-router/zipball/a1298921eb486d2a093205347a394e1ec74a9c43",
-                "reference": "a1298921eb486d2a093205347a394e1ec74a9c43",
+                "url": "https://api.github.com/repos/zendframework/zend-expressive-router/zipball/072d6b0620f7e1e616cb60062425b4eedd1a0447",
+                "reference": "072d6b0620f7e1e616cb60062425b4eedd1a0447",
                 "shasum": ""
             },
             "require": {
@@ -901,8 +901,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev",
-                    "dev-develop": "3.1.x-dev"
+                    "dev-master": "3.1.x-dev",
+                    "dev-develop": "3.2.x-dev"
                 },
                 "zf": {
                     "config-provider": "Zend\\Expressive\\Router\\ConfigProvider"
@@ -928,7 +928,7 @@
                 "zend-expressive",
                 "zf"
             ],
-            "time": "2018-03-15T15:59:46+00:00"
+            "time": "2018-06-05T15:28:00+00:00"
         },
         {
             "name": "zendframework/zend-expressive-template",
@@ -1107,31 +1107,31 @@
         },
         {
             "name": "zendframework/zend-stdlib",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-stdlib.git",
-                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78"
+                "reference": "cd164b4a18b5d1aeb69be2c26db035b5ed6925ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/debedcfc373a293f9250cc9aa03cf121428c8e78",
-                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78",
+                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/cd164b4a18b5d1aeb69be2c26db035b5ed6925ae",
+                "reference": "cd164b4a18b5d1aeb69be2c26db035b5ed6925ae",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "athletic/athletic": "~0.1",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "^2.6.2"
+                "phpbench/phpbench": "^0.13",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+                "zendframework/zend-coding-standard": "~1.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev",
-                    "dev-develop": "3.2-dev"
+                    "dev-master": "3.2.x-dev",
+                    "dev-develop": "3.3.x-dev"
                 }
             },
             "autoload": {
@@ -1143,12 +1143,13 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "homepage": "https://github.com/zendframework/zend-stdlib",
+            "description": "SPL extensions, array utilities, error handlers, and more",
             "keywords": [
+                "ZendFramework",
                 "stdlib",
-                "zf2"
+                "zf"
             ],
-            "time": "2016-09-13T14:38:50+00:00"
+            "time": "2018-04-30T13:50:40+00:00"
         },
         {
             "name": "zendframework/zend-stratigility",
