@@ -14,18 +14,20 @@ GitHub Webhook using [Zend Expressive](https://docs.zendframework.com/zend-expre
 
 Create a `config.php` file in `config/application` directory :
 
-    <?php
+```php
+<?php
 
-    return [
-        'token' => 'your_webhook_token',
-        'endpoints' => [
-            [
-                'repository' => 'jbelien/myrepo',
-                'branch' => 'master', // required for PUSH event
-                'run' => '',
-            ],
+return [
+    'token' => 'your_webhook_token',
+    'endpoints' => [
+        [
+            'repository' => 'jbelien/myrepo',
+            'branch' => 'master', // required for PUSH event
+            'run' => '',
         ],
-    ];
+    ],
+];
+```
 
 - Replace `your_webhook_token` by the token you provided in your webhook settings (see hereunder) ;
 - Replace `jbelien/myrepo` by your repository ;
