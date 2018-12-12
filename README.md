@@ -21,7 +21,7 @@ Create a `config.php` file in `config/application` directory :
         'endpoints' => [
             [
                 'repository' => 'jbelien/myrepo',
-                'branch' => 'master',
+                'branch' => 'master', // required for PUSH event
                 'run' => '',
             ],
         ],
@@ -42,4 +42,4 @@ You can provide as many endpoints as needed ! For instance, if you need to use t
 4. Put the link to the webhook in "Payload URL" : something like `http://YOUR_IP_ADDRESS/webhook` ; don't forget to add the `/webhook` after your IP address or domain name !
 5. Choose `application/json` as "Content type"
 6. I suggest to add a token in "Secret" (don't forget to define it in your `config.php` file)
-7. You only need to send the `push` events.
+7. You only need to send the `push` (or `release`) events.

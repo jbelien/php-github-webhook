@@ -48,8 +48,12 @@ class WebhookHandler implements RequestHandlerInterface
                 return $this->push();
                 break;
 
+            case 'release':
+                return $this->release();
+                break;
+
             default:
-                return new TextResponse('ERROR: This webhook only supports PING and PUSH events!', 501);
+                return new TextResponse('ERROR: This webhook only supports PING, PUSH, and RELEASE events!', 501);
                 break;
         }
     }
@@ -102,5 +106,49 @@ class WebhookHandler implements RequestHandlerInterface
         }
 
         return new TextResponse(sprintf('WARNING: No endpoint found for "%s" (branch "%s")!', $repository, $branch), 404);
+    }
+
+    private function release()
+    {
+        $repository = $this->payload['repository']['full_name'];
+
+        $out = 'DELIVERY: '.$this->delivery.PHP_EOL;
+        $out .= 'BY: '.$this->payload['release']['author']['login'].PHP_EOL;
+        $out .= '--------------------------------------------------'.PHP_EOL;
+
+        foreach ($this->config['endpoints'] as $endpoint) {
+            if ($endpoint['repository'] === $repository) {
+                $out .= 'REPOSITORY: '.$repository.PHP_EOL;
+                $out .= 'RELEASE: '.($this->payload['release']['name'] ?? '').' ('.$this->payload['release']['tag_name'].')'.PHP_EOL;
+                $out .= '--------------------------------------------------'.PHP_EOL;
+
+                if (!is_array($endpoint['run'])) {
+                    $endpoint['run'] = [$endpoint['run']];
+                }
+
+                $status = 200;
+                foreach ($endpoint['run'] as $i => $run) {
+                    $process = new Process($run);
+
+                    $out .= '['.($i + 1).'] '.$run.PHP_EOL;
+
+                    try {
+                        $process->mustRun();
+
+                        $out .= $process->getOutput().PHP_EOL;
+                    } catch (ProcessFailedException $exception) {
+                        $status = 500;
+
+                        $out .= $exception->getMessage().PHP_EOL;
+                    }
+
+                    $out .= '--------------------------------------------------'.PHP_EOL;
+                }
+
+                return new TextResponse($out, $status);
+            }
+        }
+
+        return new TextResponse(sprintf('WARNING: No endpoint found for "%s"!', $repository, $branch), 404);
     }
 }
