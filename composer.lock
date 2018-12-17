@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4dd819bcc3ddd004a0fec8c915de0367",
+    "content-hash": "b5f72603aa09a5060376ee1f17e9038c",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -813,16 +813,16 @@
         },
         {
             "name": "zendframework/zend-expressive-helpers",
-            "version": "5.1.0",
+            "version": "5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-expressive-helpers.git",
-                "reference": "9c6a287438f429f036efa159876e2a29c16f8010"
+                "reference": "c4db15318ae53965794f46618535fc61dd058ea7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-expressive-helpers/zipball/9c6a287438f429f036efa159876e2a29c16f8010",
-                "reference": "9c6a287438f429f036efa159876e2a29c16f8010",
+                "url": "https://api.github.com/repos/zendframework/zend-expressive-helpers/zipball/c4db15318ae53965794f46618535fc61dd058ea7",
+                "reference": "c4db15318ae53965794f46618535fc61dd058ea7",
                 "shasum": ""
             },
             "require": {
@@ -869,7 +869,7 @@
                 "zend-expressive",
                 "zf"
             ],
-            "time": "2018-06-05T15:22:07+00:00"
+            "time": "2018-07-26T20:05:23+00:00"
         },
         {
             "name": "zendframework/zend-expressive-router",
