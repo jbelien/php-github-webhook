@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b5f72603aa09a5060376ee1f17e9038c",
+    "content-hash": "d97a7af2ad8a5f2d8b5129a68dafc137",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -340,16 +340,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.1.0",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "73445bd33b0d337c060eef9652b94df72b6b3434"
+                "reference": "2b341009ccec76837a7f46f59641b431e4d4c2b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/73445bd33b0d337c060eef9652b94df72b6b3434",
-                "reference": "73445bd33b0d337c060eef9652b94df72b6b3434",
+                "url": "https://api.github.com/repos/symfony/process/zipball/2b341009ccec76837a7f46f59641b431e4d4c2b0",
+                "reference": "2b341009ccec76837a7f46f59641b431e4d4c2b0",
                 "shasum": ""
             },
             "require": {
@@ -358,7 +358,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -385,7 +385,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-30T07:26:09+00:00"
+            "time": "2018-11-20T16:22:05+00:00"
         },
         {
             "name": "zendframework/zend-component-installer",
