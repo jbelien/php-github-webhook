@@ -13,7 +13,7 @@
     },
     "require": {
         "php": "^7.2",
-        "symfony/process": "4.2.2",
+        "symfony/process": "4.2.3",
         "zendframework/zend-component-installer": "2.1.1",
         "zendframework/zend-config": "3.2.0",
         "zendframework/zend-config-aggregator": "1.1.1",
