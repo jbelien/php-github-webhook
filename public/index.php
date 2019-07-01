@@ -12,7 +12,6 @@ require 'vendor/autoload.php';
 
 use Zend\Expressive\Application;
 use Zend\Expressive\MiddlewareFactory;
-use Zend\ServiceManager\Config;
 use Zend\ServiceManager\ServiceManager;
 
 /*
