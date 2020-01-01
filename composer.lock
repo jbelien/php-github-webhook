@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64580168082b86e8e4ef4a99fa6cba0b",
+    "content-hash": "6cde20c78fe5b465e1b9774071345629",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -393,16 +393,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.4.0",
+            "version": "v4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "75ad33d9b6f25325ebc396d68ad86fd74bcfbb06"
+                "reference": "b84501ad50adb72a94fb460a5b5c91f693e99c9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/75ad33d9b6f25325ebc396d68ad86fd74bcfbb06",
-                "reference": "75ad33d9b6f25325ebc396d68ad86fd74bcfbb06",
+                "url": "https://api.github.com/repos/symfony/process/zipball/b84501ad50adb72a94fb460a5b5c91f693e99c9b",
+                "reference": "b84501ad50adb72a94fb460a5b5c91f693e99c9b",
                 "shasum": ""
             },
             "require": {
@@ -438,7 +438,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2019-10-28T20:30:34+00:00"
+            "time": "2019-12-06T10:06:46+00:00"
         },
         {
             "name": "zendframework/zend-component-installer",
@@ -490,6 +490,7 @@
                 "plugin",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-component-installer",
             "time": "2019-09-04T19:10:43+00:00"
         },
         {
@@ -550,6 +551,7 @@
                 "config",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-config",
             "time": "2019-06-08T18:58:54+00:00"
         },
         {
@@ -605,6 +607,7 @@
                 "config-aggregator",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-config-aggregator",
             "time": "2018-04-04T20:37:31+00:00"
         },
         {
@@ -672,6 +675,7 @@
                 "psr",
                 "psr-7"
             ],
+            "abandoned": "laminas/laminas-diactoros",
             "time": "2019-11-13T19:16:13+00:00"
         },
         {
@@ -717,6 +721,7 @@
                 "escaper",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-escaper",
             "time": "2018-04-25T15:48:53+00:00"
         },
         {
@@ -809,6 +814,7 @@
                 "zend-expressive",
                 "zf"
             ],
+            "abandoned": "mezzio/mezzio",
             "time": "2018-11-08T15:30:09+00:00"
         },
         {
@@ -876,6 +882,7 @@
                 "zend-expressive",
                 "zf"
             ],
+            "abandoned": "mezzio/mezzio-fastroute",
             "time": "2019-06-20T13:58:31+00:00"
         },
         {
@@ -936,6 +943,7 @@
                 "zend-expressive",
                 "zf"
             ],
+            "abandoned": "mezzio/mezzio-helpers",
             "time": "2019-03-12T20:43:27+00:00"
         },
         {
@@ -999,6 +1007,7 @@
                 "zend-expressive",
                 "zf"
             ],
+            "abandoned": "mezzio/mezzio-router",
             "time": "2018-06-05T15:28:00+00:00"
         },
         {
@@ -1052,6 +1061,7 @@
                 "zend-expressive",
                 "zf"
             ],
+            "abandoned": "mezzio/mezzio-template",
             "time": "2018-03-15T15:42:46+00:00"
         },
         {
@@ -1106,6 +1116,7 @@
                 "psr-7",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-httphandlerrunner",
             "time": "2018-02-21T20:33:02+00:00"
         },
         {
@@ -1174,6 +1185,7 @@
                 "servicemanager",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-servicemanager",
             "time": "2018-12-22T06:05:09+00:00"
         },
         {
@@ -1220,6 +1232,7 @@
                 "stdlib",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-stdlib",
             "time": "2018-08-28T21:34:05+00:00"
         },
         {
@@ -1286,6 +1299,7 @@
                 "psr-7",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-stratigility",
             "time": "2018-07-24T20:39:18+00:00"
         }
     ],
