@@ -16,7 +16,7 @@
         "symfony/process": "4.4.2",
         "zendframework/zend-component-installer": "2.1.2",
         "zendframework/zend-config": "3.3.0",
-        "zendframework/zend-config-aggregator": "1.1.1",
+        "zendframework/zend-config-aggregator": "1.2.0",
         "zendframework/zend-diactoros": "2.2.1",
         "zendframework/zend-expressive": "3.2.1",
         "zendframework/zend-expressive-fastroute": "3.0.3",
