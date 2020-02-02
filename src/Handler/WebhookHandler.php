@@ -20,7 +20,7 @@ class WebhookHandler implements RequestHandlerInterface
     private $payload;
     private $signature;
 
-    public function handle(ServerRequestInterface $request) : ResponseInterface
+    public function handle(ServerRequestInterface $request): ResponseInterface
     {
         $this->config = $request->getAttribute(ConfigMiddleware::CONFIG_ATTRIBUTE);
         $this->payload = $request->getParsedBody();
