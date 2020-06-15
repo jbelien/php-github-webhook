@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a480d3940e95881e32bb88c4063f2223",
+    "content-hash": "7698bc25ae26a8597274758f0c579886",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -393,7 +393,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.4.9",
+            "version": "v4.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
